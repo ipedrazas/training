@@ -68,6 +68,7 @@ helm init \
 
 ### Helm Options
 
+```
 Environment:
   $HELM_HOME          set an alternative location for Helm files. By default, these are stored in ~/.helm
   $HELM_HOST          set an alternative Tiller host. The format is host:port
@@ -114,16 +115,18 @@ Flags:
       --kubeconfig string               absolute path to the kubeconfig file to use
       --tiller-connection-timeout int   the duration (in seconds) Helm will wait to establish a connection to tiller (default 300)
       --tiller-namespace string         namespace of Tiller (default "kube-system")
+```
 
 ## Exercises:
 
 1.- Install Helm in your minikube cluster with the following configuration:
 
-    * We want `tiller` to run in the `helm-system` namespace
-    * Make sure that we don't keep more than 10 versions of each release.
-    * Tiller runs in a node with the `platform` label
+* We want `tiller` to run in the `helm-system` namespace
+* Make sure that we don't keep more than 10 versions of each release.
+* Tiller runs in a node with the `platform` label
 
 2.- Create a set of configurations for:
-    * Local (minikube)
-    * Lab
-    * Development environment (air gap)
+
+* Local (minikube)
+* Lab
+* Development environment (air gap)
